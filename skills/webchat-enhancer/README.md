@@ -1,10 +1,3 @@
----
-name: webchat-enhancer
-description: 🌟 Enhance OpenClaw WebChat with clickable navigation. One-command install!
-version: 4.1.5
-author: Boss
----
-
 # WebChat Enhancer
 
 🌟 Add clickable navigation to OpenClaw WebChat | 4 Languages | 3 Themes
@@ -67,6 +60,14 @@ Done! ✅
 
 ---
 
+## Settings
+
+**Language:** English · 中文 · 日本語 · 한국어
+
+**Theme:** Dark · Light · Gradient
+
+---
+
 ## Browser Support
 
 Chrome · Firefox · Edge · Safari
@@ -75,13 +76,32 @@ Requires Tampermonkey extension.
 
 ---
 
-## Files
+## FAQ
 
-```
-webchat-enhancer/
-├── SKILL.md
-├── install.sh      ← Run this for one-command install
-├── scripts/
-│   └── enhancer.user.js
-└── _meta.json
-```
+**Q: Is it safe?**
+> Yes. Script only runs on localhost. No data is sent anywhere.
+
+**Q: Not working?**
+> 1. Refresh page (F5)
+> 2. Make sure Tampermonkey icon is colored (not gray)
+> 3. Wait 3 seconds for panel to appear
+
+---
+
+## Version
+
+4.1.5
+
+---
+
+## Links
+
+- **GreasyFork:** https://greasyfork.org/zh-CN/scripts/571337-webchat-enhancer
+- **GitHub:** https://github.com/yjin94606-art/webchat-enhancer
+- **ClawHub:** https://clawhub.com/skills/webchat-enhancer
+
+---
+
+<p align="center">
+  Made with ❤️ for better OpenClaw experience
+</p>
