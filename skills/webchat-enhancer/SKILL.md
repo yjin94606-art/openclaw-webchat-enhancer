@@ -1,7 +1,7 @@
 ---
 name: webchat-enhancer
-description: 🌟 Enhance OpenClaw WebChat with clickable navigation. One-command install!
-version: 4.2.0
+description: 🌟 Enhance OpenClaw WebChat with hover-expandable navigation. Auto theme sync with Lobster colors.
+version: 4.5.0
 author: Boss
 ---
 
