@@ -9,15 +9,15 @@ A lightweight Tampermonkey script that adds a sleek, hover-expandable navigation
 
 ## Features
 
-🖱️ **Hover to Expand** — A slim tab stays hidden on the right edge. Slide your mouse near it and the panel smoothly slides out. Slide away and it hides again. No clicks required.
+🖱️ **Hover to Expand** — A slim tab stays hidden on the right edge of the screen. Slide your mouse near it and the panel smoothly slides out. Move your mouse away and it hides again. No clicks needed.
 
-🎨 **Auto Theme Sync** — Automatically detects whether your WebChat is in Dark or Light mode and instantly switches the navigator to matching Lobster-inspired colors. No manual switching needed.
+🎨 **Auto Theme Sync** — Automatically detects whether your WebChat is in Dark or Light mode and instantly switches the navigator to matching Lobster-inspired colors. No manual switching, no settings panel — it just works.
 
-📜 **Chat Navigator** — Scans your entire conversation and generates a list of clickable message cards. Click any card to smoothly scroll and jump to that exact message in chat.
+📜 **Chat Navigator** — Scans your entire conversation and generates a list of clickable message cards. Click any card to smoothly scroll and jump to that exact message.
 
 🔄 **Auto-Updating** — Detects new messages automatically as they appear. The message list stays fresh without any action from you.
 
-⚡ **Lightweight** — Pure vanilla JavaScript. No external dependencies. Runs entirely client-side in your browser.
+⚡ **Lightweight** — Pure vanilla JavaScript. No external dependencies. No settings or configuration needed.
 
 ---
 
@@ -28,6 +28,16 @@ A lightweight Tampermonkey script that adds a sleek, hover-expandable navigation
 
 **Light Mode**
 ![Light Mode](screenshot-light.png)
+
+---
+
+## What Changed in 4.5.0
+
+- ❌ Removed language switching — English only, keeping it simple
+- ❌ Removed theme selector — theme is now fully automatic
+- ❌ Removed settings panel — works out of the box
+- 🆕 Hover-expandable navigation — panel hides when not in use
+- 🆕 Auto theme detection — syncs with WebChat Dark/Light mode instantly
 
 ---
 
@@ -69,17 +79,6 @@ A lightweight Tampermonkey script that adds a sleek, hover-expandable navigation
 
 ---
 
-## Auto Theme Detection
-
-The navigator intelligently detects your WebChat theme by:
-
-1. Checking `data-theme` attributes on `<body>` and `<html>`
-2. Falling back to computed background color brightness analysis
-
-When you switch between Dark and Light modes in WebChat, the navigator updates within 300ms.
-
----
-
 ## Technical Details
 
 - **Version:** 4.5.0
@@ -87,6 +86,7 @@ When you switch between Dark and Light modes in WebChat, the navigator updates w
 - **License:** MIT
 - **Namespace:** `https://clawhub.ai/skills/webchat-enhancer`
 - **Match URLs:** `http://127.0.0.1:18789/*`, `http://localhost:18789/*`
+- **No external dependencies** — runs 100% client-side
 
 ---
 
@@ -101,9 +101,14 @@ When you switch between Dark and Light modes in WebChat, the navigator updates w
 ## Changelog
 
 ### 4.5.0
-- 🆕 Hover-expandable navigation — panel slides out on mouse approach
-- 🎨 Auto theme sync with WebChat Dark/Light mode
-- 🦐 Lobster-inspired color scheme (crimson red accent)
+- 🆕 Hover-expandable navigation — panel hides until mouse approaches
+- 🎨 Auto theme sync — detects WebChat Dark/Light mode automatically
+- 🦐 Lobster-inspired colors (crimson red accent)
 - ⚡ Faster theme detection (300ms polling + MutationObserver)
-- 🔧 Removed settings panel — fully automatic
-- 🐛 Fixed edge-case hover flicker issues
+- 🔧 Removed settings/language/theme panels — fully automatic
+- 🐛 Fixed hover flicker at panel edges
+
+### 4.x (Previous)
+- Click-to-expand/fold navigation
+- Manual language and theme selection
+- Fixed chat bubble detection
